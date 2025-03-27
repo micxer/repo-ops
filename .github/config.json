@@ -1,0 +1,5 @@
+{
+  "autodiscover": true,
+  "autodiscoverFilter": ["micxer/*"],
+  "platform": "github"
+}
