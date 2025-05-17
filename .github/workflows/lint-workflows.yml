@@ -30,7 +30,7 @@ jobs:
         shell: bash
 
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@9864bc9c96305e727bfcd4d4c1f8aadc2d03032f
+        uses: astral-sh/setup-uv@1761eea391d1db980fce81a3dfd2e97df1564d84
 
       - name: Run Zizmor with online checks
         run: uvx zizmor --format=sarif . > zizmor-results.sarif
