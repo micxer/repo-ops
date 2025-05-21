@@ -5,14 +5,26 @@
     "renovate"
   ],
   "dependencyDashboard": true,
-  "extends": ["config:recommended", "config:best-practices"],
-  "schedule": ["before 6am every day"],
+  "extends": [
+    "config:recommended",
+    "config:best-practices"
+  ],
+  "schedule": [
+    "before 6am"
+  ],
   "packageRules": [
     {
-      "matchManagers": ["github-actions"],
-      "matchPackageNames": ["github/codeql-action"],
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackageNames": [
+        "github/codeql-action"
+      ],
       "groupName": "codeql-action",
-      "labels": ["github_actions", "codeql"],
+      "labels": [
+        "github_actions",
+        "codeql"
+      ],
       "enabled": true
     }
   ]
