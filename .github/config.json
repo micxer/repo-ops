@@ -3,6 +3,7 @@
   "autodiscoverFilter": ["micxer/*"],
   "repositories": [
     "micxer/repo-ops",
+    "micxer/infra",
     "micxer/ansible-role-docker-compose-homestack"
   ],
   "platform": "github"
