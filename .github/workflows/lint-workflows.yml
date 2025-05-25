@@ -32,7 +32,7 @@ jobs:
         shell: bash
 
       - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@0e0f4bfefaa11c95736e9c6840fa4f385a4d191f
+        uses: astral-sh/setup-uv@f3121ef80ee2c4902cefcba4d30c2d17aa8baea7
         with:
           enable-cache: false
 
