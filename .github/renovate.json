@@ -26,6 +26,19 @@
         "codeql"
       ],
       "enabled": true
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
     }
-  ]
+  ],
+  "automerge": true,
+  "automergeType": "branch",
+  "automergeStrategy": "squash",
+  "automergeSafe": true,
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "prBodyTemplate": "This PR will be automerged if all status checks pass. :robot:"
 }
