@@ -14,7 +14,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 2 * * *" # 2am daily
+    - cron: "42 * * * *" # every hour at minute 42
+  # Trigger manually via the GitHub UI
   workflow_dispatch:
 
 concurrency:
@@ -48,4 +49,4 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL)$"
         env:
-          LOG_LEVEL: debug
+          LOG_LEVEL: info
