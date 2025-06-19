@@ -28,17 +28,24 @@
       "enabled": true
     },
     {
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "automerge": false
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["lint", "prettier"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
     }
   ],
   "automerge": true,
   "automergeType": "branch",
   "automergeStrategy": "squash",
-  "automergeSafe": true,
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
-  "prBodyTemplate": "This PR will be automerged if all status checks pass. :robot:"
+  "prBodyTemplate": "This PR will be automerged if all status checks pass. :robot:",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
 }
