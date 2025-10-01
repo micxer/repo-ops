@@ -50,4 +50,4 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL)$"
         env:
-          LOG_LEVEL: info
+          LOG_LEVEL: debug
