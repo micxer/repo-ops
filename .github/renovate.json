@@ -12,6 +12,7 @@
   "schedule": [
     "before 6am"
   ],
+  "timezone": "Europe/Berlin",
   "packageRules": [
     {
       "matchManagers": [
