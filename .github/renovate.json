@@ -40,7 +40,7 @@
     }
   ],
   "automerge": true,
-  "automergeType": "branch",
+  "automergeType": "pr",
   "automergeStrategy": "squash",
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
