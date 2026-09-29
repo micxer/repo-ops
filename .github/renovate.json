@@ -13,6 +13,15 @@
     "before 6am"
   ],
   "timezone": "Europe/Berlin",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github\\/workflows\\/renovate\\.yml$/"],
+      "matchStrings": ["BOT_IMAGE_VERSION: '(?<currentValue>[0-9.]+)'"],
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "ghcr.io/renovatebot/renovate"
+    }
+  ],
   "packageRules": [
     {
       "matchManagers": [
@@ -27,6 +36,11 @@
         "codeql"
       ],
       "enabled": true
+    },
+    {
+      "matchManagers": ["custom.regex"],
+      "matchPackageNames": ["ghcr.io/renovatebot/renovate"],
+      "pinDigests": false
     },
     {
       "matchDepTypes": ["devDependencies"],
