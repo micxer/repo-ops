@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  BOT_IMAGE_VERSION: '44'
+  BOT_IMAGE_VERSION: '45'
 
 permissions:
   contents: read
